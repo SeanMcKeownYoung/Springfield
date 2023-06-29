@@ -1,11 +1,11 @@
 div#comparison { 
-    width: 60vw;
-    height: 60vw;
-    max-width: 600px;
+    width: 90vw;
+    height: 100vw;
+    max-width: 1000px;
     max-height: 600px;
     overflow: hidden; }
   div#comparison figure { 
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/photoshop-face-before.jpg); 
+    background-image: url(IMAGES/BEFORE.jpg); 
     background-size: cover;
     position: relative;
     font-size: 0;
@@ -18,7 +18,7 @@ div#comparison {
     width: 100%;
   }
   div#comparison figure div { 
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/photoshop-face-after.jpg);
+    background-image: url(IMAGES/AFTER.jpg);
     background-size: cover;
     position: absolute;
     width: 50%; 
@@ -74,4 +74,24 @@ div#comparison {
   input[type=range]:focus::-moz-range-thumb {
       background: rgba(255,255,255,0.5);
      }
+
+header {
+    width: 1000px;
+}
+
+.beforeText {
+    position: absolute;
+    text-align: start;
+    font-family: sans-serif;
+    font-size: 48px;
+    z-index: 1;
+}
+
+.afterText {
+    position: relative;
+    text-align: end;
+    font-family: sans-serif;
+    font-size: 48px;
+    z-index: 1;
+}
   
